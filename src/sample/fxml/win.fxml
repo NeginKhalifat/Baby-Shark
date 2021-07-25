@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WinController">
+    <children>
+        <AnchorPane layoutY="-1.0" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;">
+            <children>
+                <Label layoutX="111.0" layoutY="231.0" text="Baby Shark" textFill="#fcf5f5">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+      <Label layoutX="447.0" layoutY="150.0" prefHeight="51.0" prefWidth="154.0" text="         You Win!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="play_again_" layoutX="414.0" layoutY="265.0" mnemonicParsing="false" onAction="#Switch2Game" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #0598ff;" text="Play Agian" textFill="#f9f3f3" />
+      <Button fx:id="next_level_" layoutX="560.0" layoutY="265.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #0598ff;" text="next Level" textFill="#f9f3f3" />
+      <Button fx:id="menu_" layoutX="494.0" layoutY="401.0" mnemonicParsing="false" onAction="#Switch2History" prefWidth="66.0" text="Menu" />
+      <Label fx:id="score_" layoutX="495.0" layoutY="201.0" prefHeight="17.0" prefWidth="66.0" />
+    </children>
+</AnchorPane>

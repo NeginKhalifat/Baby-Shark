@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #102f44;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HistoryController">
+   <children>
+      <TableView fx:id="table" layoutX="141.0" layoutY="65.0" prefHeight="290.0" prefWidth="420.0">
+        <columns>
+          <TableColumn fx:id="score" prefWidth="75.0" text="score" />
+          <TableColumn fx:id="status" prefWidth="106.33334350585938" text="status" />
+            <TableColumn fx:id="time" prefWidth="85.66668701171875" text="Time" />
+            <TableColumn fx:id="date" prefWidth="151.66665649414062" text="Date" />
+        </columns>
+      </TableView>
+      <Label fx:id="label" layoutX="280.0" layoutY="22.0" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" textFill="#f5e9e9" />
+      <Button fx:id="score_board" layoutX="199.0" layoutY="400.0" mnemonicParsing="false" onAction="#Switch2Board" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: #0598ff;" text="Score Board " textFill="#102f44">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button fx:id="new_game" layoutX="314.0" layoutY="400.0" mnemonicParsing="false" onAction="#Switch2Game" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: #0598ff;" text="New Game" textFill="#102f44">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button fx:id="continue_" layoutX="428.0" layoutY="400.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: #0598ff;" text="Continue" textFill="#102f44">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

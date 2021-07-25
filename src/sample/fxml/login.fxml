@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <children>
+        <Label fx:id="username" layoutX="385.0" layoutY="200.0" text="Username" />
+        <Label fx:id="password" layoutX="387.0" layoutY="242.0" text="Password" />
+        <TextField fx:id="username_field" layoutX="472.0" layoutY="188.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <Button fx:id="login" layoutX="510.0" layoutY="352.0" mnemonicParsing="false" onAction="#Switch2History" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: #0598ff;" text="login" textFill="#f9f3f3">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <AnchorPane layoutY="-1.0" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;">
+            <children>
+                <Label layoutX="111.0" layoutY="231.0" text="Baby Shark" textFill="#fcf5f5">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Hyperlink fx:id="signup" layoutX="481.0" layoutY="405.0" onAction="#Switch2Signup" text="Don't have an account?" />
+        <PasswordField fx:id="password_field" layoutX="471.0" layoutY="238.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;;" />
+      <Label fx:id="error" layoutX="472.0" layoutY="289.0" prefHeight="23.0" prefWidth="149.0" textAlignment="CENTER" textFill="#dc0a0a" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+#game{
+    -fx-background-image: url("Images/bg.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 900 900;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+.chat-bubble {
+
+    -fx-background-color: black, white;
+    -fx-background-insets: 0,1;
+    -fx-padding: 50;
+}
+#imageView{}

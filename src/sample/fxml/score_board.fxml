@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #102f44;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ScoreBoardController">
+    <children>
+        <TableView fx:id="table_" layoutX="245.0" layoutY="75.0" prefHeight="273.0" prefWidth="223.0">
+            <columns>
+                <TableColumn fx:id="username_" prefWidth="109.33331298828125" text="Username" />
+                <TableColumn fx:id="score_" prefWidth="112.66665649414062" text="Score" />
+            </columns>
+        </TableView>
+        <Label fx:id="label" layoutX="280.0" layoutY="22.0" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" text="            Score Board" textFill="#f5e9e9" />
+        <Button fx:id="menu_" layoutX="314.0" layoutY="400.0" mnemonicParsing="false" onAction="#Switch2History" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: #0598ff;" text="Menu" textFill="#102f44">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

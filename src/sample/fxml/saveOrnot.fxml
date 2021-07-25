@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SaveController">
+    <children>
+        <AnchorPane layoutY="-1.0" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;">
+            <children>
+                <Label layoutX="111.0" layoutY="231.0" text="Baby Shark" textFill="#fcf5f5">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="408.0" layoutY="146.0" prefHeight="59.0" prefWidth="248.0" text="       Do You Want To Save?">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="no" layoutX="414.0" layoutY="265.0" mnemonicParsing="false" onAction="#not_save" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #0598ff;" text="No" textFill="#f9f3f3" />
+        <Button fx:id="play_again_" layoutX="560.0" layoutY="265.0" mnemonicParsing="false" onAction="#yes_save" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #0598ff;" text="Yes" textFill="#f9f3f3" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignupController">
+    <children>
+        <Label fx:id="first_name" layoutX="385.0" layoutY="32.0" text="First Name" />
+        <Label fx:id="last_name" layoutX="387.0" layoutY="82.0" text="Last Name" />
+        <TextField fx:id="first_name_field" layoutX="472.0" layoutY="14.0" promptText="Ali" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField fx:id="last_name_field" layoutX="471.0" layoutY="68.0" promptText="zare" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <Label fx:id="ID_code" layoutX="393.0" layoutY="136.0" text="ID code" />
+        <TextField fx:id="id_code_field" layoutX="470.0" layoutY="118.0" promptText="3341298854" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+
+        <TextField fx:id="age_field" layoutX="470.0" layoutY="177.0" promptText="22" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <Label fx:id="Age" layoutX="403.0" layoutY="182.0" text="Age" />
+
+        <Label fx:id="Gender" layoutX="395.0" layoutY="232.0" text="Gender" />
+
+
+        <Label fx:id="username" layoutX="391.0" layoutY="292.0" text="Username" />
+        <Label fx:id="password" layoutX="393.0" layoutY="342.0" text="Password" />
+        <TextField fx:id="username_field" layoutX="478.0" layoutY="274.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <Button fx:id="ok" layoutX="510.0" layoutY="412.0" mnemonicParsing="false" onAction="#Switch2History" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: #0598ff;" text="Ok" textFill="#f9f3f3">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <AnchorPane layoutY="-1.0" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;">
+            <children>
+                <Label layoutX="111.0" layoutY="231.0" text="Baby Shark" textFill="#fcf5f5">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Hyperlink fx:id="signup" layoutX="454.0" layoutY="449.0" onAction="#Switch2Login" text="Do you already have an account?" />
+        <PasswordField fx:id="password_field" layoutX="477.0" layoutY="324.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;;" />
+      <Label fx:id="error" layoutX="425.0" layoutY="372.0" prefHeight="25.0" prefWidth="237.0" textAlignment="CENTER" textFill="#e30404" />
+      <ComboBox fx:id="gender_field" layoutX="471.0" layoutY="228.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>
